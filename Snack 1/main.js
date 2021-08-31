@@ -31,3 +31,16 @@ let {nome, peso} = biciLeggera;
 console.log(
     `nome bicicletta: ${nome}, peso bicicletta: ${peso}`
 );
+
+// BONUS: inserire una arrow function che preso in input l'array di bici ritorni l'oggetto con bici più leggera
+
+let lightBike = () => {
+    for (let i = 0; i < bici.length - 1; i++) {
+        if (bici[i].peso < biciLeggera.peso) {
+            biciLeggera = bici[i];
+        }
+    }
+    return biciLeggera;
+};
+
+console.log(lightBike());
