@@ -15,15 +15,19 @@ let bici = [
     }
 ];
 
-console.log(bici);
+// console.log(bici);
 
-// Stampare a schermo la bici con peso minore utilizzando destructuring e template literal
 let biciLeggera = bici[0];
 for (let i = 0; i < bici.length - 1; i++) {
-
+    
     if (bici[i].peso < biciLeggera.peso) {
         biciLeggera = bici[i];
     }
 };
+// console.log(biciLeggera);
 
-console.log(biciLeggera);
+// Stampare a schermo la bici con peso minore utilizzando destructuring e template literal
+let {nome, peso} = biciLeggera;
+console.log(
+    `nome bicicletta: ${nome}, peso bicicletta: ${peso}`
+);
