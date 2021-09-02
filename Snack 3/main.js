@@ -4,6 +4,11 @@ let array = [1,2,3,4,5,6,7,8,9,10];
 let a;
 let b;
 
+const random = (min , max) => {
+    return Math.floor(Math.random() * max) + min;
+};
+
+
 do {
     a = random(1, 10);
     b = random(1, 10);
@@ -26,6 +31,7 @@ console.log(a, b);
 
 // console.log(newArray);
 
+
 let newArray = [];
 
 array.forEach((element, i) => {
@@ -38,6 +44,6 @@ console.log(newArray);
 
 
 // funzioni
-function random(min, max) {
-    return Math.floor(Math.random() * max) + min;
-};
+// function random(min, max) {
+//     return Math.floor(Math.random() * max) + min;
+// };
